@@ -972,7 +972,7 @@ section {
 
 .footer {
     background: var(--bg-tertiary);
-    padding: 4rem 0 2rem;
+    padding: 1.5rem 0;
 }
 
 .footer-content {
@@ -1051,9 +1051,16 @@ section {
     color: var(--text-secondary);
 }
 
+.footer {
+    background: var(--bg-tertiary);
+    padding: 2rem 0;
+}
+
+/* ... existing styles ... */
+
 .footer-bottom {
-    padding-top: 2rem;
-    border-top: 1px solid var(--glass-border);
+    padding-top: 0;
+    border-top: none;
     text-align: center;
     color: var(--text-muted);
 }

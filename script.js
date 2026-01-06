@@ -178,35 +178,7 @@ if (contactForm) {
     });
 }
 
-// QR Code
-const qrContainer = document.getElementById('qrcode');
-if (qrContainer) {
-    // Public URL from Localtunnel
-    const mobileUrl = "https://flat-impalas-grin.loca.lt";
 
-    // Generate QR Code
-    setTimeout(() => {
-        if (typeof QRCode !== 'undefined') {
-            try {
-                qrContainer.innerHTML = '';
-                new QRCode(qrContainer, {
-                    text: mobileUrl,
-                    width: 128,
-                    height: 128,
-                    colorDark: "#000000",
-                    colorLight: "#ffffff",
-                    correctLevel: QRCode.CorrectLevel.H
-                });
-                console.log(`QR Code generated for: ${mobileUrl}`);
-            } catch (e) {
-                console.error("QR Code generation failed:", e);
-                qrContainer.innerHTML = 'Erreur QR';
-            }
-        } else {
-            qrContainer.innerHTML = '<p>QR Lib missing</p>';
-        }
-    }, 1000);
-}
 
 
 // ===========================
