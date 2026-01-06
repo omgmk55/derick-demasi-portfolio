@@ -1,0 +1,19 @@
+{
+  "name": "derick-demasi-portfolio",
+  "version": "1.0.0",
+  "description": "Site web portfolio professionnel pour Derick Demasi (Altesse)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y live-server --port=3000 --host=localhost --open",
+    "start": "npx -y live-server --port=3000 --host=localhost --open",
+    "serve": "npx -y http-server -p 8000 -o"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "altesse",
+    "derick-demasi"
+  ],
+  "author": "Derick Demasi",
+  "license": "MIT"
+}
